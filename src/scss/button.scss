@@ -1,0 +1,21 @@
+@mixin button($w, $bg  ){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: $w;
+  height: 50px;
+  background: $bg;
+  outline: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+}

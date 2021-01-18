@@ -1,0 +1,86 @@
+.form{
+    padding: 100px 0;
+  background: #282828;
+  &__block{
+    width: 100%;
+    padding: 105px 0 80px;
+    border: 3px solid #C4C4C4;
+    position: relative;
+  }
+  &__title-block{
+    width: 490px;
+    height: 74px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282828;
+    &:before{
+      position: absolute;
+      content: '';
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 118px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+  &__title{
+    @include text-style(bold, 36px, 150%, #ffffff);
+    font-family: var(--Playfair);
+  }
+  &__left-img{
+    position: absolute;
+    top: -69px;
+    left: -30px;
+  }
+  &__right-img{
+    position: absolute;
+    top: -65px;
+    right: -53px;
+  }
+  &__subtitle{
+    @include text-style(normal, 16px, 150%, #ffffff);
+    width: 539px;
+    margin: 0 auto;
+  }
+  &__info {
+    margin: 81px auto 0;
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-input, {
+      width: 254px;
+      height: 30px;
+      background: #282828;
+      border: none;
+      outline: none;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #fff;
+      color: white;
+      &_address{
+        width: 540px;
+      }
+
+      &::placeholder {
+        @include text-style(500, 13px, 150%, #ffffff);
+        text-align: left;
+      }
+    }
+    &-btn{
+      @include button(540px, #282828);
+      border: 1px solid #fff;
+    }
+    &-label {
+      &:nth-child(2) {
+        margin-left: 31px;
+      }
+    }
+
+  }
+}

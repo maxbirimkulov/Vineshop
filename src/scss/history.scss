@@ -1,0 +1,35 @@
+.history{
+  padding: 100px 0 100px;
+  background: var(--bgcolor);
+  &__block{
+    padding: 60px 0 60px;
+    text-align: center;
+    border: 3px solid #C4C4C4;
+  }
+  &__title{
+    @include text-style(bold, 36px, 150%, #ffffff);
+    font-family: var(--Playfair);
+    padding-bottom: 40px;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      top: 94px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 160px;
+      border-bottom: 1px solid #FFFFFF;
+    }
+  }
+  &__subtitle{
+    @include text-style(normal, 16px, 150%, #ffffff);
+    margin: 40px auto 50px ;
+    width: 733px;
+  }
+  &__img{
+    margin: 0 auto;
+  }
+  
+
+
+}

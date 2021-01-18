@@ -1,0 +1,9 @@
+@mixin text-style($w, $fs , $ln , $c){
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: $w;
+  font-size: $fs;
+  line-height: $ln;
+  color: $c;
+  text-align: center;
+}

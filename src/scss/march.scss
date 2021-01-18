@@ -1,0 +1,83 @@
+.march{
+  padding: 80px 0 80px;
+  background: #E6E3C4;
+  &__block{
+    padding: 60px 0 60px;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+  }
+  &__new{
+    @include text-style(normal, 16px, 150%, #000000);
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  &__title{
+    @include text-style(bold, 36px, 150%, #282828);
+    font-family: var(--Playfair);
+    text-align: left;
+    padding-bottom: 30px;
+    position: relative;
+    width: 298px;
+    &:before{
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 138px;
+      width: 160px;
+      border-bottom: 1px solid #282828;
+    }
+  }
+  &__subtitle{
+    @include text-style(normal, 14px, 150%, #282828);
+    margin: 30px 0 30px;
+    text-align: left;
+    width: 445px;
+  }
+  &__catalog{
+    width: 445px;
+    height: 228px;
+  }
+  &__catalog-item{
+    height: 76px;
+    border-bottom: 1px solid #282828;
+    &:last-child{
+      border-bottom:none;
+    }
+  }
+  &__catalog-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    border-right:1px solid #282828 ;
+  }
+  &__catalog-text{
+    padding: 10px 0 0 30px;
+
+  }
+  &__catalog-title{
+    margin-bottom: 5px;
+    @include text-style(bold, 18px, 150%, #282828);
+    font-family: var(--Playfair);
+    text-align: left;
+  }
+  &__catalog-subtitle{
+    @include text-style(normal, 14px, 150%, #282828);
+    text-align: left;
+  }
+  &__btn{
+    @include button(254px, var(--gold));
+  }
+  &__first-img{
+    margin-bottom: 30px;
+    width: 540px;
+    height: 500px;
+  }
+  &__second-img{
+    width: 255px;
+    height: 228px;
+    &:last-child{
+      margin-left: 30px;
+    }
+  }
+}
